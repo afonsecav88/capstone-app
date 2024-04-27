@@ -1,30 +1,40 @@
-import { React, useContext } from 'react';
+import { React, useContext,useState } from 'react';
 import { BookingContext } from './context/BookingContext';
 
 const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
 const availableOccasion = ['Birthday', 'Anniversary'];
 
 export const BookingForm = () => {
-  const { state, dispatch } = useContext(BookingContext);
-
-  const {time,guests,date,occasion} = state;
-
-  console.log('Mostrando el estado', state);
-
-  const onChange = (event) => {
-    dispatch({
-      type: 'change_time',
-      time: event.target.value,
-    });
+  const initState = {
+    date:'',
+    time: '' ,
+    guests: 1,
+    occasion: '',
   };
-  //   const resetForm = () => {
-  //     setFormData({ ...initState });
-  //   };
+  const [ formData, setFormData ] = useState(initState);
+  const { state, dispatch } = useContext(BookingContext);
+  console.log('Mostrando el estado local', formData);
+  console.log('Mostrando el estado global', state);
+  
+  const {time,guests,date,occasion} = formData;
+
+  const onChange = (event ) => {
+      setFormData( prev => ({
+          ...prev,
+          [event.target.name]: event.target.value
+      }))        
+  }
+
+  // const resetForm = () => {
+  //     setFormData({ ...initState })
+  // }
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch({
       type: 'update_reservation',
+      ...formData
     });
   };
 
