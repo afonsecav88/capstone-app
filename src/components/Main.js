@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './HomePage ';
-import { BookingPage } from './BookingPage ';
+import { BookingPage } from './BookingPage';
+
 
 export const Main = () => {
   return (

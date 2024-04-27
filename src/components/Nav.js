@@ -1,26 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Nav = () => {
   return (
-    <nav>      
+    <nav>
+      <img src="./Logo.svg" alt="logo" />
       <ul className="nav-menu nav-link">
         <li>
-          <a href="index.html"> HOME</a>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <a  href="/some/valid/uri"> ABOUT</a>
+          <Link to="">ABOUT</Link>
         </li>
         <li>
-          <a   href="/some/valid/uri"> MENU</a>
+          <Link to="/some/valid/uri">MENU</Link>
         </li>
         <li>
-          <a  href="/some/valid/uri"> RESERVATION</a>
+          <Link to="/booking">RESERVATION</Link>
         </li>
         <li>
-          <a  href="/some/valid/uri"> ORDER ONLINE</a>
+          <Link to="/some/valid/uri">ORDER ONLINE</Link>
         </li>
         <li>
-          <a  href="/some/valid/uri"> LOGIN</a>
+          <Link to="/some/valid/uri"> LOGIN</Link>
         </li>
       </ul>
     </nav>
