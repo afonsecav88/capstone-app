@@ -1,34 +1,32 @@
-import { React, useState } from 'react';
+import { React, useContext } from 'react';
+import { BookingContext } from './context/BookingContext';
+
+const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+const availableOccasion = ['Birthday', 'Anniversary'];
 
 export const BookingForm = () => {
-  const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
-  const availableOccasion = ['Birthday', 'Anniversary'];
+  const { state, dispatch } = useContext(BookingContext);
 
-  const initState = {
-    date: new Date("yyyy-MM-dd"),
-    time: availableTimes,
-    guests: 1,
-    occasion: availableOccasion,
-  };
+  const {time,guests,date,occasion} = state;
 
-  const [formData, setFormData] = useState(initState);
+  console.log('Mostrando el estado', state);
 
   const onChange = (event) => {
-    setFormData((prev) => ({
-      ...prev,
-      [event.target.name]: event.target.value,
-    }));
+    dispatch({
+      type: 'change_time',
+      time: event.target.value,
+    });
   };
-  const resetForm = () => {
-    setFormData({ ...initState });
-  };
+  //   const resetForm = () => {
+  //     setFormData({ ...initState });
+  //   };
 
   const handleSubmit = (e) => {
-   e.preventDefault();
-   console.log(formData);
+    e.preventDefault();
+    dispatch({
+      type: 'update_reservation',
+    });
   };
-
-  console.log({formData});
 
   return (
     <form
@@ -40,17 +38,17 @@ export const BookingForm = () => {
         type="date"
         id="date"
         name="date"
-        value={formData.date}
+        value={date}
         onChange={onChange}
       />
-      
+
       <label htmlFor="time">Choose time</label>
-      <select id="time" name="time"  onChange={onChange}  multiple={false}>
-        {availableTimes.map((time,index) => (
+      <select id="time" name="time" onChange={onChange} multiple={false}>
+        {availableTimes.map((time, index) => (
           <option key={index}>{time}</option>
         ))}
       </select>
-     
+
       <label htmlFor="guests">Number of guests</label>
       <input
         type="number"
@@ -60,17 +58,21 @@ export const BookingForm = () => {
         id="guests"
         name="guests"
         onChange={onChange}
-        value={formData.guests}
+        value={guests}
       />
 
       <label htmlFor="occasion">Occasion</label>
-      <select id="occasion" name="occasion"  
-        onChange={onChange} multiple={false}>
-        {availableOccasion.map((occasion,index) => (
+      <select
+        id="occasion"
+        name="occasion"
+        onChange={onChange}
+        multiple={false}
+      >
+        {availableOccasion.map((occasion, index) => (
           <option key={index}>{occasion}</option>
-        ))}    
+        ))}
       </select>
-      <input type="submit" value="Make Your reservation"/>
+      <input type="submit" value="Make Your reservation" />
     </form>
   );
 };
