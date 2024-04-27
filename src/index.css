@@ -1,13 +1,133 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #EDEFEE;
+  font-family: "Aptos", "Proxima Nova", "Verdana", "Roboto", "Raleway";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%vh;
+  height: 5em;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #333333;
+  gap: 2em;
+  list-style: none;
+  padding: 1em;
+}
+
+.nav-link {
+  background-color: rgb(105, 140, 185);
+  transition: all .3s ease-out;
+  border-radius: 2;
+  border-radius: 1em;
+  text-decoration: none;
+}
+
+.nav-link a {
+  color: rgba(255, 255, 255, 0.746);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link a:hover {
+  color: rgba(103, 14, 14, 0.746);
+}
+
+.promotion-section {
+  display: flex;
+  gap: 1em;
+  /* background-image: url('./images/banner.png'); */
+  background-size: 100% 100%;
+  padding: 3em;
+}
+
+.promotion-section>p {
+  margin-left: 2em;
+  font-size: medium;
+  color: rgb(17, 17, 15);
+}
+
+.promotion-section>h1 {
+  color: rgb(255, 255, 255);
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.info-section>p {
+  text-align: center;
+}
+
+.info-section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(235, 225, 213);
+  border-radius: 0.2em;
+  padding: 1em;
+}
+
+.info-section-item img {
+  width: 16em;
+  height: 12em;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.footer-section>div {
+  flex: 1;
+}
+
+.footer-section p {
+  border-top: 0.2em solid salmon;
+  text-align: end;
+  padding: 0.5em;
+}
+
+.footer-img {
+  height: 7em;
+  width: 4em;
+  padding-left: 2em;
+}
+
+@media (min-width: 400px) {
+  .info-section-item {
+      width: 100%;
+      align-self: center;
+
+  }
+}
+
+@media (min-width: 838px) {
+  .info-section-item {
+      width: 60%;
+      align-self: center;
+
+  }
+}
+
+@media (min-width: 1326px) {
+  .info-section-item {
+      width: 30%;
+  }
 }
