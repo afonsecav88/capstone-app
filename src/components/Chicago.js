@@ -2,6 +2,9 @@ import React from 'react'
 
 export const Chicago = () => {
   return (
-    <div>Chicago</div>
+    <section>
+      <h1 id='section-chicago-h1'>Little Lemon</h1>
+      <h2 id='section-chicago-h2'>Chicago</h2>
+    </section>
   )
 }

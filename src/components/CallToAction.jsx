@@ -1,11 +1,11 @@
 import React from 'react';
+import { Chicago } from './Chicago';
 
 export const CallToAction = () => {
   return (
     <article className="hero-section">
       <section>
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
+        <Chicago/>
         <p>
           We are a family owned Mediterranean restaurant, focused ontraditional
           recipes served whith a modern twist.

@@ -81,22 +81,6 @@ body {
   margin: 0em;
 }
 
-
-.hero-section>section>h1 {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  color: #C3A510;
-  font-size: 40pt;
-}
-
-.hero-section>section>h2 {
-  margin-top: 0em;
-  margin-bottom: 0.5em;
-  color: #EDEFEE;
-  font-size: 22pt;
-  font-weight: lighter;
-}
-
 .hero-section>section>p {
   width: 14em;
   font-size: 14pt;
@@ -203,8 +187,6 @@ body {
 /* End Specials Component */
 
 
-
-
 /* Begin section-testimonials*/
 
 .section-testimonials {
@@ -212,7 +194,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 5em;
+  padding-top: 3em;
+}
+
+.section-testimonials >h1{
+  font-weight: lighter;
+  color: #333333;
+  font-size: 35pt;
 }
 
 #rating-header{
@@ -243,6 +231,37 @@ body {
 }
 /* End section-testimonials*/
 
+/* Begin about-container*/
+.about-container{
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+}
+
+
+
+/* End about-container*/
+
+
+/* Begin chicago component style */
+
+#section-chicago-h1
+{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #C3A510;
+  font-size: 40pt;
+}
+
+#section-chicago-h2{ 
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    color: #EDEFEE;
+    font-size: 22pt;
+    font-weight: lighter;
+}
+
+/* End chicago component style */
 
 /*Begin reservation-form */
 
@@ -263,7 +282,7 @@ body {
 /* End reservation-form */
 
 
-.info-section {
+/* .info-section {
   display: flex;
   justify-content: center;
   gap: 1em;
@@ -288,7 +307,7 @@ body {
 .info-section-item img {
   width: 16em;
   height: 12em;
-}
+} */
 
 .footer-section {
   display: flex;
