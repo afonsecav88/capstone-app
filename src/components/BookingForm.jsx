@@ -22,7 +22,7 @@ export const BookingForm = () => {
       setFormData( prev => ({
           ...prev,
           [event.target.name]: event.target.value
-      }))        
+      }))
   }
 
   // const resetForm = () => {
@@ -43,23 +43,24 @@ export const BookingForm = () => {
       onSubmit={handleSubmit}
       style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
     >
-      <label htmlFor="date">Choose date</label>
+      <label htmlFor="date" aria-label="Select date">Choose date</label>
       <input
         type="date"
         id="date"
         name="date"
         value={date}
         onChange={onChange}
+        required
       />
 
-      <label htmlFor="time">Choose time</label>
-      <select id="time" name="time" onChange={onChange} multiple={false}>
+      <label htmlFor="time" aria-label="Select time">Choose time</label>
+      <select id="time" name="time" onChange={onChange} multiple={false} required>
         {availableTimes.map((time, index) => (
           <option key={index}>{time}</option>
         ))}
       </select>
 
-      <label htmlFor="guests">Number of guests</label>
+      <label htmlFor="guests" aria-label="Select guests">Number of guests</label>
       <input
         type="number"
         placeholder="1"
@@ -69,14 +70,16 @@ export const BookingForm = () => {
         name="guests"
         onChange={onChange}
         value={guests}
+        required
       />
 
-      <label htmlFor="occasion">Occasion</label>
+      <label htmlFor="occasion" aria-label="Select Occasion">Occasion</label>
       <select
         id="occasion"
         name="occasion"
         onChange={onChange}
         multiple={false}
+        required
       >
         {availableOccasion.map((occasion, index) => (
           <option key={index}>{occasion}</option>
