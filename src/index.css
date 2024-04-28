@@ -215,28 +215,28 @@ body {
   padding-top: 5em;
 }
 
-.section-testimonials-header {
-  display: flex;
-  justify-content: center;
-  font-weight: lighter;
+#rating-header{
+  font-weight: bold;
   color: #333333;
-  font-size: 30pt;
+  font-size: 12.5pt;
+  
 }
 
 .card-review-container {
   display: flex;
   justify-content: center;
-  gap:1em;
+  gap:2em;
   width: 20em;
 }
 
 .card-image-testimonial {
   display: inline-flex;
-  width: 20em;
-  height: 8em;
+  width: 15em;
+  height: 6em;
   padding-top: 2em;
-  gap: 2em
+  gap: 3em
 }
+
 
 .card-image>p {
   margin-top: 0em;
@@ -336,6 +336,34 @@ body {
     gap: 2vw;
   }
 }
+
+/*End media hero-section */
+
+/*Begin testimonials review section */
+
+@media (max-width: 400px) {
+  .card-review-container {
+    display: flex;    
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 838px) {
+  .card-review-container {
+    display: flex;    
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .card-review-container {
+    display: flex;    
+    flex-wrap: wrap;
+  }
+}
+
+/*Begin testimonials review section */
 
 /* @media (min-width: 838px) {
   .hero-section {
