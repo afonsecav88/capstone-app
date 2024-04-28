@@ -1,5 +1,5 @@
 body {
-  background-color: #EDEFEE;
+  background-color: #FFFFFF;
   font-family: "Type System", "Proxima Nova", "Verdana", "Roboto", "Raleway";
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -7,6 +7,7 @@ body {
   margin-right: 0em;
 }
 
+/* Begin nav-section */
 .nav-logo {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +25,7 @@ body {
   padding: 1em;
 }
 
-.nav-link {  
+.nav-link {
   transition: all .3s ease-out;
   border-radius: 2;
   border-radius: 1em;
@@ -34,12 +35,16 @@ body {
 .nav-link a {
   color: #333333;
   text-decoration: none;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .nav-link a:hover {
   color: rgba(103, 14, 14, 0.746);
 }
+
+/* End nav-section */
+
+/* Begin CallToAction Component */
 
 .hero-section {
   display: flex;
@@ -54,13 +59,13 @@ body {
   padding: 2em;
 }
 
-.hero-section>article>img {
+.hero-section>section>img {
   width: 22em;
   height: 26em;
   border-radius: 1em;
 }
 
-.hero-section>article>button {
+.hero-section>section>button {
   width: 12em;
   height: 3em;
   border-radius: 1em;
@@ -69,24 +74,24 @@ body {
   color: #333333;
   font-size: 13.5pt;
   border: 0em;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
-.hero-section>article {
-  display: flex;  
+.hero-section>section {
+  display: flex;
   flex-direction: column;
   margin: 0em;
 }
 
 
-.hero-section>article>h1 {
+.hero-section>section>h1 {
   margin-top: 0em;
   margin-bottom: 0em;
   color: #C3A510;
-  font-size: 40pt; 
+  font-size: 40pt;
 }
 
-.hero-section>article>h2 {
+.hero-section>section>h2 {
   margin-top: 0em;
   margin-bottom: 0.5em;
   color: #EDEFEE;
@@ -94,12 +99,87 @@ body {
   font-weight: lighter;
 }
 
-
-.hero-section>article>p {
+.hero-section>section>p {
   width: 14em;
   font-size: 14pt;
-  color:#EDEFEE;
+  color: #EDEFEE;
 }
+
+/* End CallToAction Component */
+
+/* Begin Specials Component */
+
+.specials-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 8em;
+  /* gap: 15vw;
+  width: 100wh;
+  height: 19em;
+  padding: 2em; */
+}
+
+.specials-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12vw;
+  padding: 1em;
+}
+
+.specials-section-header>h1 {
+  margin: 0em;
+  color: #333333;
+  font-size: 35pt;
+}
+
+.specials-section-header>button {
+  width: 12em;
+  height: 3em;
+  border-radius: 1em;
+  padding: 0.5em;
+  background-color: #F4CE14;
+  color: #333333;
+  font-size: 13.5pt;
+  border: 0em;
+  font-weight: bold;
+}
+
+.specials-section-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  /* gap: 12vw; */
+  padding: 1em;
+}
+
+.specials-card {
+  background-color: #EDEFEE;
+}
+
+#card-description {
+  width: 14em;
+  height: 16em;
+}
+
+
+
+.card-image {
+  width: 14em;
+  height: 16em;
+  border-radius: 1em;
+}
+
+
+
+
+/* End Specials Component */
+
 
 .info-section {
   display: flex;
@@ -152,22 +232,22 @@ body {
 
 @media (min-width: 400px) {
   .info-section-item {
-      width: 100%;
-      align-self: center;
+    width: 100%;
+    align-self: center;
 
   }
 }
 
 @media (min-width: 838px) {
   .info-section-item {
-      width: 60%;
-      align-self: center;
+    width: 60%;
+    align-self: center;
 
   }
 }
 
 @media (min-width: 1326px) {
   .info-section-item {
-      width: 30%;
+    width: 30%;
   }
 }
