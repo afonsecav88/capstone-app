@@ -3,6 +3,8 @@ import { BookingForm } from './BookingForm';
 
 export const BookingPage = () => {
   return (
-    <BookingForm/>
+    <section className='section-reservation-form'>
+      <BookingForm/>
+    </section>
   )
 }

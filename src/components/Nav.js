@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Nav = () => {
   return (
     <nav className='nav-menu'>
-      <img src="./Logo.svg" alt="logo" className='nav-logo'/>
+      <Link to='/' ><img src="./Logo.svg" alt="logo" className='nav-logo'/></Link> 
       <ul className="nav-menu nav-link">
         <li>
           <Link to="/">Home</Link>

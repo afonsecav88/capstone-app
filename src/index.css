@@ -50,10 +50,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 15vw;  
+  gap: 15vw;
   height: 19em;
   background-color: #495E57;
-  padding: 3em; 
+  padding: 3em;
 }
 
 .hero-section>section>img {
@@ -175,8 +175,8 @@ body {
   width: 15.0em;
   justify-content: space-between;
   color: #333333;
-  font-size: 12.5pt; 
-  font-weight: bold;  
+  font-size: 12.5pt;
+  font-weight: bold;
 }
 
 #card-header-price {
@@ -201,6 +201,66 @@ body {
 }
 
 /* End Specials Component */
+
+
+
+
+/* Begin section-testimonials*/
+
+.section-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.section-testimonials-header {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  color: #333333;
+  font-size: 30pt;
+}
+
+.card-review-container {
+  display: flex;
+  justify-content: center;
+  gap:1em;
+  width: 20em;
+}
+
+.card-image-testimonial {
+  display: inline-flex;
+  width: 20em;
+  height: 8em;
+  padding-top: 2em;
+  gap: 2em
+}
+
+.card-image>p {
+  margin-top: 0em;
+}
+/* End section-testimonials*/
+
+
+/*Begin reservation-form */
+
+.section-reservation-form {
+  display: flex;
+  justify-content: center;
+  background-color: #EDEFEE;
+  padding: 1em;
+}
+
+.section-reservation-form>p {
+  display: flex;
+  justify-content: center;
+  background-color: #10291c;
+  padding: 1em;
+}
+
+/* End reservation-form */
 
 
 .info-section {
