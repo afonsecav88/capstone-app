@@ -1,6 +1,7 @@
-import greekSalad from '/greek salad.jpg';
-import bruchetta from '/bruchetta.svg';
-import leamonDesseart from '/lemon dessert.jpg';
+
+import greekSalad from '../images/greek salad.jpg';
+import bruchetta from '../images/bruchetta.jpg';
+import leamonDesseart from '../images/lemon dessert.jpg';
 
 export const specialsData = [
   {
@@ -28,7 +29,7 @@ export const specialsData = [
     cover: leamonDesseart,
     specialName: 'Leamon Desseart',
     specialPrice: '$5.00',
-    specialDescription: `this comes straight form grandma's recipe book, every last ingredient has been spurced and is authentic as can be imagined`,
+    specialDescription: `This comes straight form grandma's recipe book, every last ingredient has been spurced and is authentic as can be imagined.`,
     specialFooter: 'Order a delivery',
     specialFooterIcon: '🏍',
   },

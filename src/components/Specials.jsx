@@ -1,4 +1,5 @@
 import React from 'react';
+import { specialsData } from './../mocks/specialsData';
 
 export const Specials = () => {
   return (
@@ -8,28 +9,20 @@ export const Specials = () => {
         <button>Online Menu</button>
       </section>
       <section className="specials-section-container">
-        <div className="specials-section-card">
-          <div>
-            <img
-              src="/greek salad.jpg"
-              alt="icon delivery"
-              className="card-image"
-            />
+        {specialsData.map((card) => (
+          <div key={card.id} className="specials-section-card">
+            <img src={card.cover} alt="icon delivery" className="card-image" />
+            <div className="card-header">
+              <p>{card.specialName}</p>
+              <p id="card-header-price">{card.specialPrice}</p>
+            </div>
+            <p id="card-description">{card.specialDescription}</p>
+            <div className="card-footer">
+              <p>{card.specialFooter}</p>
+              <p>{card.specialFooterIcon}</p>
+            </div>
           </div>
-          <div className='card-header'>
-            <p>Greek salad</p>
-            <p id='card-header-price'>$12.99</p>
-          </div>
-          <p id='card-description'>
-            The famousus greek salad of crispy lettuce,peppers,olves and our
-            Chicago style feta cheese,garnishe with crunchy garlic and rosemary
-            crountons.
-          </p>
-          <div className='card-footer'>
-            <p>Order a delivery</p>
-            <p>🏍</p>
-          </div>
-        </div>
+        ))}
       </section>
     </article>
   );

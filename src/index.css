@@ -50,16 +50,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 15vw;
   width: 100wh;
   height: 19em;
   background-color: #495E57;
-  padding: 2em;
+  padding: 3em; 
 }
 
 .hero-section>section>img {
+  display: flex;
   width: 22em;
   height: 26em;
   border-radius: 1em;
@@ -115,10 +114,6 @@ body {
   align-content: center;
   flex-wrap: wrap;
   margin-top: 8em;
-  /* gap: 15vw;
-  width: 100wh;
-  height: 19em;
-  padding: 2em; */
 }
 
 .specials-section-header {
@@ -127,7 +122,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12vw;
-  padding: 1em;
+  padding: 2em;
 }
 
 .specials-section-header>h1 {
@@ -148,19 +143,20 @@ body {
   font-weight: bold;
 }
 
+
+/* Begin Card section of specials */
 .specials-section-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
   flex-wrap: wrap;
-  /* gap: 12vw; */
+  gap: 2vw;
   padding: 1em;
 }
 
 .specials-section-card {
   display: flex;
   flex-direction: column;
+  width: 17.5em;
   align-items: center;
   background-color: #EDEFEE;
   border-top-left-radius: 2em;
@@ -168,23 +164,23 @@ body {
 }
 
 .card-image {
-  width: 17em;
-  height: 16em;
+  width: 17.5em;
+  height: 10em;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
 }
 
-
 .card-header {
   display: flex;
-  gap: 4em;
+  padding-top: 1em;
+  width: 15.0em;
+  justify-content: space-between;
   color: #333333;
-  font-size: 12.5pt;
-  border: 0em;
-  font-weight: bold;
+  font-size: 12.5pt; 
+  font-weight: bold;  
 }
 
-#card-header-price{
+#card-header-price {
   color: #EE946B;
 }
 
@@ -256,6 +252,45 @@ body {
   width: 4em;
   padding-left: 2em;
 }
+
+
+/*Begin media hero-section */
+
+@media (max-width: 400px) {
+  .hero-section {
+    display: flex;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    flex-direction: column;
+    align-content: center;
+    height: 90vh;
+    gap: 2vw;
+  }
+}
+
+@media (max-width: 838px) {
+  .hero-section {
+    display: flex;
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+    flex-direction: column;
+    align-content: center;
+    height: 90vh;
+    gap: 2vw;
+  }
+}
+
+/* @media (min-width: 838px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+
+  }
+} */
+
+/* End media hero-section */
 
 @media (min-width: 400px) {
   .info-section-item {
