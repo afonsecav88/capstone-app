@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
-import {BookingContext} from "./BookingContext.js"
-import { UpdateTimesReducer } from './../reducer/UpdateTimesReducer';
+import { UpdateTimesReducer } from '../reducer/UpdateTimesReducer';
+import { BookingContext } from './BookingContext';
 
 export const BookingProvider = ({children}) => {
   

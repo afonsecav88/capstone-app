@@ -1,5 +1,6 @@
 import { React, useContext,useState } from 'react';
-import { BookingContext } from './context/BookingContext';
+import { BookingContext } from '../context/BookingContext';
+
 
 const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
 const availableOccasion = ['Birthday', 'Anniversary'];
