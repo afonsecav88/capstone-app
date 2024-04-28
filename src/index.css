@@ -50,8 +50,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 15vw;
-  width: 100wh;
+  gap: 15vw;  
   height: 19em;
   background-color: #495E57;
   padding: 3em; 
@@ -259,11 +258,10 @@ body {
 @media (max-width: 400px) {
   .hero-section {
     display: flex;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 5em;
+    padding-bottom: 5em;
     flex-direction: column;
     align-content: center;
-    height: 90vh;
     gap: 2vw;
   }
 }
@@ -271,11 +269,10 @@ body {
 @media (max-width: 838px) {
   .hero-section {
     display: flex;
-    padding-top: 10vh;
-    padding-bottom: 12vh;
     flex-direction: column;
-    align-content: center;
-    height: 90vh;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    height: 42em;
     gap: 2vw;
   }
 }
