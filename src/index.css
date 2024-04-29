@@ -257,6 +257,7 @@ body {
 .about-container{
   display: flex;
   justify-content: center; 
+  align-content: center;
   padding-top: 4em;
   margin-right: 45em;
 }
@@ -296,12 +297,10 @@ body {
   z-index:2;
   padding-top: 10em;
 }
-
-
 /* End about-container*/
 
-/*Begin reservation-form */
 
+/*Begin reservation-form */
 .section-reservation-form {
   display: flex;
   justify-content: center;
@@ -315,17 +314,17 @@ body {
   background-color: #10291c;
   padding: 1em;
 }
+/*End reservation-form */
 
 
 /* Begin footer section */
-
 .footer-section {
   display: flex;
   align-items: center;
   margin-top: 15em;
 }
 
-.footer-section>div {
+.footer-section>div {  
   flex: 1;
 }
 
@@ -357,6 +356,7 @@ body {
 .footer-contact>ul>li>img{
   width: 2em;
   height: 3em;
+  padding-right: 1em;
 }
 
 /*social media section*/
@@ -387,17 +387,17 @@ body {
 .footer-social-media-list>li>img {
  width: 2em;
  height: 3em;
+ padding-right: 1em;
  }
 
 .footer-logo-img {
   height: 18em;
   width: 8em;
-  padding-left: 4em;
+  padding-left: 10em;
 }
 
 
 /*Begin media hero-section */
-
 @media (max-width: 400px) {
   .hero-section {
     display: flex;
@@ -419,11 +419,9 @@ body {
     gap: 2vw;
   }  
 }
-
 /*End media hero-section */
 
 /*Begin testimonials review section */
-
 @media (max-width: 400px) {
   .card-review-container {
     display: flex;    
@@ -437,7 +435,6 @@ body {
     flex-wrap: wrap;
   }
 }
-
 
 @media (max-width: 1100px) {
   .card-review-container {
@@ -445,13 +442,12 @@ body {
     flex-wrap: wrap;
   }
 }
-
 /* End media hero-section */
 
-/*Begin footer  section */
 
+/* Begin about section */
 @media (max-width: 400px) {
-  .footer-section {    
+  .about-container {    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -459,21 +455,53 @@ body {
 }
 
 @media (max-width: 838px) {
-  .footer-section {
-    padding-left: 3em;
+  .about-container {
+    padding-left: 3em;    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }  
 }
 
-
-@media (max-width: 1110px) {
-  .footer-section {
+@media (max-width: 1140px) {
+  .about-container {
+    padding-left: 8em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .about-chef-image-container{
+    padding-bottom: 15em;
+  }
+}
+/*Begin about section  */
+
+
+
+/*Begin footer  section */
+@media (max-width: 400px) {
+  .footer-section {
+    padding-top: 25em; 
+    padding-top: 25em; 
+  }
 }
 
+@media (max-width: 838px) {
+  .footer-section {
+    padding-left: 3em;
+ }  
+}
+
+
+@media (max-width: 1210px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2em;
+  }
+  .footer-logo-img{
+    padding-left: 2em;
+  }
+}
 /* End footer  section  */
