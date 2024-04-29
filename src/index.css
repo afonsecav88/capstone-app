@@ -41,6 +41,7 @@ body {
 .nav-link a:hover {
   color: rgba(103, 14, 14, 0.746);
 }
+
 /* End nav-section */
 
 
@@ -76,12 +77,12 @@ body {
 }
 
 .hero-section>section>button:hover {
-  background-color: #C3A510; 
+  background-color: #C3A510;
 }
 
-.hero-section-button-link{
+.hero-section-button-link {
   text-decoration: none;
-  
+
 }
 
 
@@ -96,25 +97,26 @@ body {
   font-size: 14pt;
   color: #EDEFEE;
 }
+
 /* End CallToAction Component */
 
 
 /* Begin chicago component style */
-#section-chicago-h1
-{
+#section-chicago-h1 {
   margin-top: 0em;
   margin-bottom: 0em;
   color: #C3A510;
   font-size: 40pt;
 }
 
-#section-chicago-h2{ 
-    margin-top: 0em;
-    margin-bottom: 0.5em;
-    color: #EDEFEE;
-    font-size: 22pt;
-    font-weight: lighter;
+#section-chicago-h2 {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  color: #EDEFEE;
+  font-size: 22pt;
+  font-weight: lighter;
 }
+
 /* End chicago component style */
 
 /* Begin Specials Component */
@@ -210,6 +212,7 @@ body {
   padding-bottom: 1em;
   padding-left: 1em;
 }
+
 /* End Specials Component */
 
 
@@ -225,13 +228,13 @@ body {
   margin-top: 3em;
 }
 
-.section-testimonials >h1{
+.section-testimonials>h1 {
   font-weight: lighter;
   color: #333333;
   font-size: 35pt;
 }
 
-#rating-header{
+#rating-header {
   font-weight: bold;
   color: #333333;
   font-size: 12.5pt;
@@ -240,7 +243,7 @@ body {
 .card-review-container {
   display: flex;
   justify-content: center;
-  gap:2em;
+  gap: 2em;
   width: 20em;
 }
 
@@ -251,43 +254,45 @@ body {
   padding-top: 2em;
   gap: 3em
 }
+
 .card-image>p {
   margin-top: 0em;
 }
+
 /* End section-testimonials*/
 
 /* Begin about-container*/
-.about-container{
+.about-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-content: center;
   padding-top: 4em;
   margin-right: 45em;
 }
 
-.about-container>div>h2{
+.about-container>div>h2 {
   font-weight: bold;
   color: #333333;
 }
 
-.about-container>div>p{
+.about-container>div>p {
   width: 15em;
 }
 
-.about-chef-image-container{
+.about-chef-image-container {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
 .about-chef-image1 {
-  display: flex;  
+  display: flex;
   width: 25em;
-  height: 20em; 
+  height: 20em;
   padding-left: 18em;
-  position:absolute; 
-  z-index:3;
-  opacity:0.9;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.9;
   border-radius: 2em;
 }
 
@@ -296,29 +301,120 @@ body {
   width: 25em;
   height: 20em;
   border-radius: 2em;
-  position:absolute;
-  z-index:2;
+  position: absolute;
+  z-index: 2;
   padding-top: 10em;
 }
+
 /* End about-container*/
 
 
 /*Begin reservation-form */
-.section-reservation-form {
+.section-reservation-container {
   display: flex;
   justify-content: center;
+  margin-top: 1em;
   gap: 4em;
-  background-color: #EDEFEE;
+  background-color: #495E57;
+  padding: 2em;
+}
+
+.section-reservation-label {
+  color: #C3A510;
+}
+
+.section-reservation-form>button {
+  display: flex;
+  justify-content: center;
+  background-color: #C3A510;
   padding: 1em;
 }
 
-.section-reservation-form>p {
-  display: flex;
-  justify-content: center;
-  background-color: #10291c;
-  padding: 1em;
+.reservation-form-button {
+  /* background-color: #C3A510; */
+  width: 15em;
+  height: 3em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background-color: #F4CE14;
+  font-size: 10.5pt;
+  border: 0em;
+  font-weight: bold;
+  margin-top: 1em;
 }
+
+.reservation-input-date {
+  width: 12em;
+  height: 1.5em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background-color: #EDEFEE;
+  font-size: 12.5pt;
+  border: 0em;
+  font-weight: lighter;
+}
+
+.reservation-input-guests {
+  width: 12em;
+  height: 1em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background-color: #EDEFEE;
+  font-size: 12.5pt;
+  border: 0em;
+  font-weight: lighter;
+}
+
+.reservation-select-times {
+  width: 13em;
+  height: 2em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background-color: #EDEFEE;
+  font-size: 12.5pt;
+  border: 0em;
+  font-weight: lighter;
+}
+
+.reservation-select-occasion {
+  width: 13em;
+  height: 2.5em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background-color: #EDEFEE;
+  font-size: 12.5pt;
+  border: 0em;
+  font-weight: lighter;
+}
+
 /*End reservation-form */
+
+
+/*Begin Booking slot section */
+.section-booking-slot {
+  display: flex;
+  flex-direction: column;
+  color: #EDEFEE;
+}
+
+.section-booking-slot-fields {
+  display: inline-flex;
+}
+
+.section-booking-slot>h3 {
+  text-decoration: underline;
+  font-weight: lighter;
+  color: #333333;
+  font-weight: 600;
+}
+
+.section-booking-slot-header {
+  color: #C3A510;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+/*End Booking slot section */
 
 
 /* Begin footer section */
@@ -330,54 +426,55 @@ body {
   background-color: #EDEFEE;
 }
 
-.footer-section>div {  
+.footer-section>div {
   flex: 1;
 }
 
 /*contact section*/
-.footer-contact{
+.footer-contact {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
 }
-.footer-contact>p{
+
+.footer-contact>p {
   margin-left: 3em;
   font-size: medium;
   font-weight: bold;
   color: #333333;
 }
 
-.footer-contact-list{
+.footer-contact-list {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
-.footer-contact-list>li{
+.footer-contact-list>li {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   list-style: none;
 }
 
-.footer-contact>ul>li>img{
+.footer-contact>ul>li>img {
   width: 2em;
   height: 3em;
   padding-right: 1em;
 }
 
 /*social media section*/
-.footer-social-media{
+.footer-social-media {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
 }
 
-.footer-social-media-list{
+.footer-social-media-list {
   display: flex;
   flex-direction: column;
 }
 
-.footer-social-media>p{
+.footer-social-media>p {
   margin-left: 3em;
   font-size: medium;
   font-weight: bold;
@@ -385,16 +482,17 @@ body {
 }
 
 .footer-social-media>ul>li {
- display: inline-flex;
- align-items: center;
- text-decoration: none;
- list-style: none;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
 }
+
 .footer-social-media-list>li>img {
- width: 2em;
- height: 3em;
- padding-right: 1em;
- }
+  width: 2em;
+  height: 3em;
+  padding-right: 1em;
+}
 
 .footer-logo-img {
   height: 18em;
@@ -423,8 +521,9 @@ body {
     padding-bottom: 5em;
     height: 42em;
     gap: 2vw;
-  } 
+  }
 }
+
 /*End media hero-section */
 
 /*Begin testimonials review section */
@@ -444,16 +543,17 @@ body {
 
 @media (max-width: 1100px) {
   .card-review-container {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
   }
 }
+
 /* End media hero-section */
 
 
 /* Begin about section */
 @media (max-width: 400px) {
-  .about-container {    
+  .about-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -462,11 +562,11 @@ body {
 
 @media (max-width: 838px) {
   .about-container {
-    padding-left: 3em;    
+    padding-left: 3em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }  
+  }
 }
 
 @media (max-width: 1140px) {
@@ -476,10 +576,12 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .about-chef-image-container{
+
+  .about-chef-image-container {
     padding-bottom: 17em;
   }
 }
+
 /*Begin about section  */
 
 
@@ -487,15 +589,15 @@ body {
 /*Begin footer  section */
 @media (max-width: 400px) {
   .footer-section {
-    padding-top: 25em; 
-    padding-top: 25em; 
+    padding-top: 25em;
+    padding-top: 25em;
   }
 }
 
 @media (max-width: 838px) {
   .footer-section {
     padding-left: 3em;
- }  
+  }
 }
 
 
@@ -506,8 +608,10 @@ body {
     flex-wrap: wrap;
     padding-top: 2em;
   }
-  .footer-logo-img{
+
+  .footer-logo-img {
     padding-left: 2em;
   }
 }
+
 /* End footer  section  */

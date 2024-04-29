@@ -1,15 +1,27 @@
-import React ,{useContext} from 'react'
+import React, { useContext } from 'react';
 import { BookingContext } from './../context/BookingContext';
 
 export const BookingSlot = () => {
   const { state } = useContext(BookingContext);
   return (
-   <section>
-    <p>Your reservation Data</p>
-     <p>Date: {state.date}</p>
-     <p>Time: {state.time}</p>
-     <p>Guest: {state.guests}</p>
-     <p>Occasion: {state.occasion}</p>
-   </section>
-  )
-}
+    <section className="section-booking-slot">
+      <h3>Your reservation Data</h3>
+      <div className="section-booking-slot-fields">
+        <p className="section-booking-slot-header">Date:</p>{' '}
+        <p> {state.date}</p>
+      </div>
+      <div className="section-booking-slot-fields">
+        <p className="section-booking-slot-header">Time: </p>{' '}
+        <p>{state.time}</p>
+      </div>
+      <div className="section-booking-slot-fields">
+        <p className="section-booking-slot-header">Guest: </p>
+        <p>{state.guests}</p>
+      </div>
+      <div className="section-booking-slot-fields">
+        <p className="section-booking-slot-header">Occasion: </p>
+        <p>{state.occasion}</p>
+      </div>
+    </section>
+  );
+};

@@ -6,14 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { BookingProvider } from './context/BookingProvider.jsx';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <BookingProvider>
-      <App />
-    </BookingProvider>
+      <BookingProvider>
+        <App />
+      </BookingProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

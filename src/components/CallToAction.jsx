@@ -6,17 +6,21 @@ export const CallToAction = () => {
   return (
     <article className="hero-section">
       <section>
-        <Chicago/>
+        <Chicago />
         <p>
           We are a family owned Mediterranean restaurant, focused ontraditional
           recipes served whith a modern twist.
         </p>
 
-          <button><Link to="/booking" className='hero-section-button-link'>Reserve a Table </Link> </button>
+        <button>
+          <Link to="/booking" className="hero-section-button-link">
+            Reserve a Table{' '}
+          </Link>{' '}
+        </button>
       </section>
       <section>
-        <img src='./restauranfood.jpg' alt='Call to action'/>
+        <img src="./restauranfood.jpg" alt="Call to action" />
       </section>
     </article>
-  ); 
+  );
 };

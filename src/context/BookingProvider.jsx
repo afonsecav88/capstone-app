@@ -1,12 +1,11 @@
-import React, { useReducer } from 'react'
+import React, { useReducer } from 'react';
 import { UpdateTimesReducer } from '../reducer/UpdateTimesReducer';
 import { BookingContext } from './BookingContext';
 
-export const BookingProvider = ({children}) => {
-  
+export const BookingProvider = ({ children }) => {
   const initState = {
-    date:'',
-    time: '' ,
+    date: '',
+    time: '',
     guests: 1,
     occasion: '',
   };
@@ -14,8 +13,8 @@ export const BookingProvider = ({children}) => {
   const [state, dispatch] = useReducer(UpdateTimesReducer, initState);
 
   return (
-   <BookingContext.Provider value={{state, dispatch}}>
-    { children }
-   </BookingContext.Provider>
-  )
-}
+    <BookingContext.Provider value={{ state, dispatch }}>
+      {children}
+    </BookingContext.Provider>
+  );
+};

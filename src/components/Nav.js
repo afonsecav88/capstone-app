@@ -13,16 +13,16 @@ export const Nav = () => {
           <Link to="">About</Link>
         </li>
         <li>
-          <Link to="/some/valid/uri">Menu</Link>
+          <Link to="/">Menu</Link>
         </li>
         <li>
           <Link to="/booking">Reservation</Link>
         </li>
         <li>
-          <Link to="/some/valid/uri">Order Online</Link>
+          <Link to="/">Order Online</Link>
         </li>
         <li>
-          <Link to="/some/valid/uri">Login</Link>
+          <Link to="/">Login</Link>
         </li>
       </ul>
     </nav>

@@ -9,7 +9,7 @@ test('renders learn react link', () => {
 });
 
 test('Renders the BookingForm heading', () => {
-    render(<BookingForm />);
-    const headingElement = screen.getByText("Choose date");
-    expect(headingElement).toBeInTheDocument();
-})
+  render(<BookingForm />);
+  const headingElement = screen.getByText('Choose date');
+  expect(headingElement).toBeInTheDocument();
+});

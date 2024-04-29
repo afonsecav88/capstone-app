@@ -13,13 +13,20 @@ export const About = () => {
           in the flavor and freshness of our creations.
         </p>
       </div>
-      <section className='section-about-image'>
-        <div className='about-chef-image-container'>
-        <img className='about-chef-image1' src="/Mario and Adrian A.jpg" alt="chef restaurant" />
-        <img className='about-chef-image2' src="/restaurant.jpg" alt="cheft restaurant in action" />
+      <section className="section-about-image">
+        <div className="about-chef-image-container">
+          <img
+            className="about-chef-image1"
+            src="/Mario and Adrian A.jpg"
+            alt="chef restaurant"
+          />
+          <img
+            className="about-chef-image2"
+            src="/restaurant.jpg"
+            alt="cheft restaurant in action"
+          />
         </div>
       </section>
-
     </article>
   );
 };

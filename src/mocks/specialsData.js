@@ -1,4 +1,3 @@
-
 import greekSalad from '../images/greek salad.jpg';
 import bruchetta from '../images/bruchetta.jpg';
 import leamonDesseart from '../images/lemon dessert.jpg';
