@@ -89,6 +89,27 @@ body {
 
 /* End CallToAction Component */
 
+
+/* Begin chicago component style */
+
+#section-chicago-h1
+{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #C3A510;
+  font-size: 40pt;
+}
+
+#section-chicago-h2{ 
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    color: #EDEFEE;
+    font-size: 22pt;
+    font-weight: lighter;
+}
+
+/* End chicago component style */
+
 /* Begin Specials Component */
 
 .specials-section {
@@ -195,6 +216,8 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #BCD1CA;
 }
 
 .section-testimonials >h1{
@@ -207,7 +230,6 @@ body {
   font-weight: bold;
   color: #333333;
   font-size: 12.5pt;
-  
 }
 
 .card-review-container {
@@ -234,34 +256,49 @@ body {
 /* Begin about-container*/
 .about-container{
   display: flex;
-  justify-content: center;
-  padding: 4em;
+  justify-content: center; 
+  padding-top: 4em;
+  margin-right: 45em;
 }
 
+.about-container>div>h2{
+  font-weight: bold;
+  color: #333333;
+}
+
+.about-container>div>p{
+  width: 15em;
+}
+
+.about-chef-image-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.about-chef-image1 {
+  display: flex;  
+  width: 25em;
+  height: 20em;
+  border-radius: 2em;
+  padding-left: 18em;
+  position:absolute; 
+  z-index:3;
+  opacity:0.9
+}
+
+.about-chef-image2 {
+  display: flex;
+  width: 25em;
+  height: 20em;
+  border-radius: 2em;
+  position:absolute;
+  z-index:2;
+  padding-top: 10em;
+}
 
 
 /* End about-container*/
-
-
-/* Begin chicago component style */
-
-#section-chicago-h1
-{
-  margin-top: 0em;
-  margin-bottom: 0em;
-  color: #C3A510;
-  font-size: 40pt;
-}
-
-#section-chicago-h2{ 
-    margin-top: 0em;
-    margin-bottom: 0.5em;
-    color: #EDEFEE;
-    font-size: 22pt;
-    font-weight: lighter;
-}
-
-/* End chicago component style */
 
 /*Begin reservation-form */
 
@@ -282,37 +319,10 @@ body {
 /* End reservation-form */
 
 
-/* .info-section {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  flex-wrap: wrap;
-  padding: 1em;
-  margin-top: 1em;
-}
-
-.info-section>p {
-  text-align: center;
-}
-
-.info-section-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(235, 225, 213);
-  border-radius: 0.2em;
-  padding: 1em;
-}
-
-.info-section-item img {
-  width: 16em;
-  height: 12em;
-} */
-
 .footer-section {
   display: flex;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 15em;
 }
 
 .footer-section>div {
@@ -326,9 +336,9 @@ body {
 }
 
 .footer-img {
-  height: 7em;
-  width: 4em;
-  padding-left: 2em;
+  height: 18em;
+  width: 8em;
+  padding-left: 8em;
 }
 
 
