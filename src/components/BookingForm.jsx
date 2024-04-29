@@ -8,16 +8,14 @@ const availableOccasion = ['Birthday', 'Anniversary'];
 export const BookingForm = () => {
   const initState = {
     date:'',
-    time: '' ,
+    time: '17:00' ,
     guests: 1,
-    occasion: '',
+    occasion: 'Birthday',
   };
   const [ formData, setFormData ] = useState(initState);
-  const { state, dispatch } = useContext(BookingContext);
-  console.log('Mostrando el estado local', formData);
-  console.log('Mostrando el estado global', state);
-  
-  const {time,guests,date,occasion} = formData;
+  const {  dispatch } = useContext(BookingContext);
+    
+  const {guests,date} = formData;
 
   const onChange = (event ) => {
       setFormData( prev => ({
@@ -26,9 +24,9 @@ export const BookingForm = () => {
       }))
   }
 
-  // const resetForm = () => {
-  //     setFormData({ ...initState })
-  // }
+  const resetForm = () => {
+      setFormData({ ...initState })
+  }
 
 
   const handleSubmit = (e) => {
@@ -37,6 +35,7 @@ export const BookingForm = () => {
       type: 'update_reservation',
       ...formData
     });
+    resetForm();
   };
 
   return (
@@ -56,8 +55,8 @@ export const BookingForm = () => {
 
       <label htmlFor="time" aria-label="Select time">Choose time</label>
       <select id="time" name="time" onChange={onChange} multiple={false} required>
-        {availableTimes.map((time, index) => (
-          <option key={index}>{time}</option>
+        {availableTimes.map((times, index) => (
+          <option key={index} value={times}>{times}</option>
         ))}
       </select>
 
@@ -82,8 +81,8 @@ export const BookingForm = () => {
         multiple={false}
         required
       >
-        {availableOccasion.map((occasion, index) => (
-          <option key={index}>{occasion}</option>
+        {availableOccasion.map((occasions, index) => (
+          <option key={index}>{occasions}</option>
         ))}
       </select>
       <input type="submit" value="Make Your reservation" />

@@ -1,8 +1,8 @@
 body {
   background-color: #FFFFFF;
   font-family: "Type System", "Proxima Nova", "Verdana", "Roboto", "Raleway";
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 0em;
   margin-right: 0em;
 }
@@ -41,11 +41,10 @@ body {
 .nav-link a:hover {
   color: rgba(103, 14, 14, 0.746);
 }
-
 /* End nav-section */
 
-/* Begin CallToAction Component */
 
+/* Begin CallToAction Component */
 .hero-section {
   display: flex;
   flex-direction: row;
@@ -73,7 +72,18 @@ body {
   font-size: 13.5pt;
   border: 0em;
   font-weight: bold;
+  text-decoration: none;
 }
+
+.hero-section>section>button:hover {
+  background-color: #C3A510; 
+}
+
+.hero-section-button-link{
+  text-decoration: none;
+  
+}
+
 
 .hero-section>section {
   display: flex;
@@ -86,12 +96,10 @@ body {
   font-size: 14pt;
   color: #EDEFEE;
 }
-
 /* End CallToAction Component */
 
 
 /* Begin chicago component style */
-
 #section-chicago-h1
 {
   margin-top: 0em;
@@ -107,11 +115,9 @@ body {
     font-size: 22pt;
     font-weight: lighter;
 }
-
 /* End chicago component style */
 
 /* Begin Specials Component */
-
 .specials-section {
   display: flex;
   flex-direction: column;
@@ -204,12 +210,10 @@ body {
   padding-bottom: 1em;
   padding-left: 1em;
 }
-
 /* End Specials Component */
 
 
 /* Begin section-testimonials*/
-
 .section-testimonials {
   display: flex;
   flex-direction: column;
@@ -218,6 +222,7 @@ body {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: #BCD1CA;
+  margin-top: 3em;
 }
 
 .section-testimonials >h1{
@@ -246,8 +251,6 @@ body {
   padding-top: 2em;
   gap: 3em
 }
-
-
 .card-image>p {
   margin-top: 0em;
 }
@@ -304,6 +307,7 @@ body {
 .section-reservation-form {
   display: flex;
   justify-content: center;
+  gap: 4em;
   background-color: #EDEFEE;
   padding: 1em;
 }
@@ -322,6 +326,8 @@ body {
   display: flex;
   align-items: center;
   margin-top: 15em;
+  padding: 2em;
+  background-color: #EDEFEE;
 }
 
 .footer-section>div {  
@@ -417,21 +423,21 @@ body {
     padding-bottom: 5em;
     height: 42em;
     gap: 2vw;
-  }  
+  } 
 }
 /*End media hero-section */
 
 /*Begin testimonials review section */
 @media (max-width: 400px) {
   .card-review-container {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media (max-width: 838px) {
   .card-review-container {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
   }
 }
@@ -471,7 +477,7 @@ body {
     flex-wrap: wrap;
   }
   .about-chef-image-container{
-    padding-bottom: 15em;
+    padding-bottom: 17em;
   }
 }
 /*Begin about section  */
