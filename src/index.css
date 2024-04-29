@@ -316,8 +316,8 @@ body {
   padding: 1em;
 }
 
-/* End reservation-form */
 
+/* Begin footer section */
 
 .footer-section {
   display: flex;
@@ -329,13 +329,67 @@ body {
   flex: 1;
 }
 
+/*contact section*/
+.footer-contact{
+  display: flex;
+  flex-direction: column; 
+}
+.footer-contact>p{
+  font-size: medium;
+  font-weight: bold;
+  color: #333333;
+}
+
+.footer-contact-list{
+  display: flex;
+  flex-direction: column; 
+}
+
+.footer-contact-list>li{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-contact>ul>li>img{
+  width: 2em;
+  height: 3em;
+}
+
+/*social media section*/
+
+
+.footer-social-media-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-media>p{
+  font-size: medium;
+  font-weight: bold;
+  color: #333333;
+}
+
+.footer-social-media>ul>li {
+ display: inline-flex;
+ align-items: center;
+ text-decoration: none;
+ list-style: none;
+}
+.footer-social-media-list>li>img {
+ width: 2em;
+ height: 3em;
+ }
+
+/* 
 .footer-section p {
   border-top: 0.2em solid salmon;
   text-align: end;
   padding: 0.5em;
-}
+} */
 
-.footer-img {
+.footer-logo-img {
   height: 18em;
   width: 8em;
   padding-left: 8em;
