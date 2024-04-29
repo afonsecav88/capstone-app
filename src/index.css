@@ -279,12 +279,12 @@ body {
 .about-chef-image1 {
   display: flex;  
   width: 25em;
-  height: 20em;
-  border-radius: 2em;
+  height: 20em; 
   padding-left: 18em;
   position:absolute; 
   z-index:3;
-  opacity:0.9
+  opacity:0.9;
+  border-radius: 2em;
 }
 
 .about-chef-image2 {
@@ -332,9 +332,11 @@ body {
 /*contact section*/
 .footer-contact{
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  align-self: flex-start;
 }
 .footer-contact>p{
+  margin-left: 3em;
   font-size: medium;
   font-weight: bold;
   color: #333333;
@@ -358,7 +360,11 @@ body {
 }
 
 /*social media section*/
-
+.footer-social-media{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
 
 .footer-social-media-list{
   display: flex;
@@ -366,6 +372,7 @@ body {
 }
 
 .footer-social-media>p{
+  margin-left: 3em;
   font-size: medium;
   font-weight: bold;
   color: #333333;
@@ -382,17 +389,10 @@ body {
  height: 3em;
  }
 
-/* 
-.footer-section p {
-  border-top: 0.2em solid salmon;
-  text-align: end;
-  padding: 0.5em;
-} */
-
 .footer-logo-img {
   height: 18em;
   width: 8em;
-  padding-left: 8em;
+  padding-left: 4em;
 }
 
 
@@ -417,7 +417,7 @@ body {
     padding-bottom: 5em;
     height: 42em;
     gap: 2vw;
-  }
+  }  
 }
 
 /*End media hero-section */
@@ -446,38 +446,34 @@ body {
   }
 }
 
-/*Begin testimonials review section */
-
-/* @media (min-width: 838px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-self: center;
-
-  }
-} */
-
 /* End media hero-section */
 
-@media (min-width: 400px) {
-  .info-section-item {
-    width: 100%;
-    align-self: center;
+/*Begin footer  section */
 
+@media (max-width: 400px) {
+  .footer-section {    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
-@media (min-width: 838px) {
-  .info-section-item {
-    width: 60%;
-    align-self: center;
+@media (max-width: 838px) {
+  .footer-section {
+    padding-left: 3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }  
+}
 
+
+@media (max-width: 1110px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
-@media (min-width: 1326px) {
-  .info-section-item {
-    width: 30%;
-  }
-}
+/* End footer  section  */
